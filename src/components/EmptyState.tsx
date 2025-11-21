@@ -1,5 +1,5 @@
 import { Button } from './ui/button';
-import { Card, CardContent } from './ui/card';
+import { Card } from './ui/card';
 import { Alert, AlertDescription, AlertTitle } from './ui/alert';
 import { Skeleton } from './ui/skeleton';
 import { FolderOpen, WifiOff, AlertCircle, Sparkles, Plus } from 'lucide-react';

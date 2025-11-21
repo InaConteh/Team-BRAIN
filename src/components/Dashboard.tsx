@@ -4,9 +4,8 @@ import { Button } from './ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from './ui/dropdown-menu';
 import { Badge } from './ui/badge';
-import { Brain, Plus, Settings, LogOut, Users, Clock, MoreVertical, Folder, Share2 } from 'lucide-react';
+import { Brain, Plus, Settings, LogOut, Clock, MoreVertical, Folder, Share2 } from 'lucide-react';
 import { EmptyState } from './EmptyState';
-import { cn } from './ui/utils';
 
 interface DashboardProps {
   user: any;

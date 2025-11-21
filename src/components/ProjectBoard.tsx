@@ -1,13 +1,13 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { Card, CardContent, CardHeader } from './ui/card';
 import { Button } from './ui/button';
 import { Avatar, AvatarFallback } from './ui/avatar';
 import { Badge } from './ui/badge';
 import { Input } from './ui/input';
 import { ScrollArea } from './ui/scroll-area';
-import { ArrowLeft, Sparkles, MessageSquare, ThumbsUp, Plus, MoreVertical, Users } from 'lucide-react';
+import { ArrowLeft, Sparkles, MessageSquare, ThumbsUp, Plus, MoreVertical } from 'lucide-react';
 import { AISummaryModal } from './AISummaryModal';
-import { motion, Reorder } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { toast } from 'sonner';
 
 interface ProjectBoardProps {
@@ -42,7 +42,7 @@ const activeUsers = [
   { name: 'Emma Davis', status: 'typing' },
 ];
 
-export function ProjectBoard({ projectId, onBack, user }: ProjectBoardProps) {
+export function ProjectBoard({ onBack }: ProjectBoardProps) {
   const [ideas, setIdeas] = useState(mockIdeas);
   const [showAISummary, setShowAISummary] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);

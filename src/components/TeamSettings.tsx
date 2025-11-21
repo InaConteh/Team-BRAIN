@@ -9,7 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { Avatar, AvatarFallback } from './ui/avatar';
 import { Badge } from './ui/badge';
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from './ui/dialog';
-import { ArrowLeft, UserPlus, Trash2, Check, X } from 'lucide-react';
+import { ArrowLeft, UserPlus, Trash2, Check } from 'lucide-react';
 import { toast } from 'sonner';
 
 interface TeamSettingsProps {

@@ -60,13 +60,11 @@ function Calendar({
         ...classNames,
       }}
       components={{
-        IconLeft: ({ className, ...props }) => (
-          <ChevronLeft className={cn("size-4", className)} {...props} />
-        ),
-        IconRight: ({ className, ...props }) => (
-          <ChevronRight className={cn("size-4", className)} {...props} />
-        ),
-      }}
+        Chevron: ({ orientation, ...props }: { orientation?: 'left' | 'right' } & React.ComponentProps<'svg'>) => {
+          const Icon = orientation === 'left' ? ChevronLeft : ChevronRight;
+          return <Icon className={cn("size-4")} {...props} />;
+        },
+      } as React.ComponentProps<typeof DayPicker>['components']}
       {...props}
     />
   );
